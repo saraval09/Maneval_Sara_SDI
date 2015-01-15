@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c22b4407-b082-40c3-b0dd-14882df496ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoToTraining2/js/gotoTraining2.js" afterPath="$PROJECT_DIR$/GoToTraining2/js/gotoTraining2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c22b4407-b082-40c3-b0dd-14882df496ed" name="Default" comment="" />
     <ignored path="Maneval_Sara_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +63,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="28" />
+    <option name="x" value="11" />
+    <option name="y" value="262" />
     <option name="width" value="1400" />
     <option name="height" value="833" />
   </component>
@@ -201,7 +198,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="28" width="1400" height="833" extended-state="0" />
+    <frame x="11" y="262" width="1400" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
