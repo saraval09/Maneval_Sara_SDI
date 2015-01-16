@@ -46,3 +46,5 @@ alert("You spend $"+totalCost+ " a month at the theatre!");
 //Thank the user for their time
 alert("Thank you for your time "+name+ "!"+ " " + "Have a wonderful day!");
 
+//I typed 2 for how many times I see a movie a month, 10 for ticket and 10 for snacks. Came out $40.
+//I typed 10 for how many times I see a movie a month, 25 for ticket and 50 for snacks. Came out $750. And I should probably be really sick after $50 of snacks too.
