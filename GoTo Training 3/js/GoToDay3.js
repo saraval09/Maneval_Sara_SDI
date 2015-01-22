@@ -89,9 +89,64 @@ console.log("There are "+ totalNumPears +" pears in the fruit bowl");
 
 //For Loop
 // for (intialize a variable; condition to test; increment of change){ code to run each time the condition is true}
-
+//Create a new variable to hold total of pears
+var pearNumber =0;
 for (var i =0; i<5; i++){
     console.log("Inside the loop");
     console.log(i);
+}
+
+//Using a for loop with an array
+
+for(var j=0; j<bowlOfFruit.length;j++ ){
+    //Use j as the index #
+    console.log(bowlOfFruit[j]);
+
+    //Test each fruit to see if it is a pear
+    if(bowlOfFruit[j] ==="pear"){
+        console.log("You found a pear");
+        pearNumber++;
+    }else{
+        //If the fruit is not a pear
+        console.log("This is not a pear");
+    }
+
+}
+console.log("Total number of pears is "+pearNumber);
+
+//Validate prompts
+var userInput = prompt("Please type in your name:");
+//To make sure that it is not blank
+
+if (userInput===""){
+    console.log("Left it blank");
+
+
+    userInput=prompt("Please dont leave blank. What is your name?");
+}
+
+//check if the user types in a number
+
+var age = prompt("Please type in your age:");
+//isNaN(to check)- tests to see if it is not a number
+//Double negative - becareful
+
+console.log(isNaN("cat"));//returns true
+console.log(isNaN(7));//returns false
+
+//test if age is a number
+
+if(isNaN(age)){
+    //This means the user typed in a text string and not a number
+    //Reprompt for a number
+    age=prompt("Please only use numbers.");
+}
+var userYesNo=prompt("Please type in Yes or no?");
+//.toLowerCase ()
+//Changes a text string to all lowercase]
+userYesNo=userYesNo/toLowerCase();
+//Limit to just those choices
+if(userYesNo !="yes" && userYesNo !="no"){
+    userYesNo=prompt("Only type in yes or no");
 
 }
