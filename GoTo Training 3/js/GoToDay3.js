@@ -23,3 +23,64 @@ console.log(bowlOfFruit.length);
 
 //Call upon a specific item in the array
 console.log(bowlOfFruit[2]);
+
+//Create a variable to hold the total number of pears
+var totalNumPears =0;
+
+//if(condition to test){Code that will will run if condition is true}
+/*
+If Else Statement
+if(condition){
+    Code to run if condition is true
+}else{
+    Code to run if condition is false
+}
+ */
+
+// "6" == 6 TRUE - Only looks at the value
+//"6" === 6 FALSE Data type is different
+// = is an assignment operator
+
+if (bowlOfFruit[0]=== "peach"){
+    //Count the fruit as a peach
+    //add one to the total num of pears
+    console.log("This is a pear.");
+    totalNumPears++; //totalNumPears = totalNumPears +1;
+
+}else {
+
+    //Code to run if not a pear
+    console.log("This fruit is not a pear.");
+}
+
+//Test the next item in the array
+
+
+if (bowlOfFruit[1]=== "peach"){
+    //Count the fruit as a peach
+    //add one to the total num of pears
+    console.log("This is a pear.");totalNumPears++;
+    //totalNumPears = totalNumPears +1;
+
+}else {
+
+    //Code to run if not a pear
+    console.log("This fruit is not a pear.");
+}
+
+//Test third item in the array
+if (bowlOfFruit[2]=== "peach"){
+    //Count the fruit as a peach
+    //add one to the total num of pears
+    console.log("This is a pear.");totalNumPears++;
+    //totalNumPears = totalNumPears +1;
+
+}else {
+
+    //Code to run if not a pear
+    console.log("This fruit is not a pear.");
+}
+
+//Test the next item in the array
+
+console.log("There are "+ totalNumPears +" pears in the fruit bowl");
