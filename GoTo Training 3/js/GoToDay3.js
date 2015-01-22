@@ -84,3 +84,14 @@ if (bowlOfFruit[2]=== "peach"){
 //Test the next item in the array
 
 console.log("There are "+ totalNumPears +" pears in the fruit bowl");
+
+//Loop - repetative code
+
+//For Loop
+// for (intialize a variable; condition to test; increment of change){ code to run each time the condition is true}
+
+for (var i =0; i<5; i++){
+    console.log("Inside the loop");
+    console.log(i);
+
+}
