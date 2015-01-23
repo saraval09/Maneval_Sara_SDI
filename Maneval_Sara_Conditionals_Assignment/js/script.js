@@ -25,6 +25,7 @@ if (name===""){
 
 //Say hello to the user
 alert("Hello "+name+"!" );
+console.log("Hello "+name+"!");
 
 //alert the user what is going on and what to expect
 alert(name+", Sparky is in need of an overhaul with his health.\nAfter 30 slices of pizza last week we found out he has DIABETES!");
@@ -38,8 +39,7 @@ var morning = prompt("It is morning and that means it is time to feed Sparky and
 if(morning===""){
     console.log("Left it blank.");
     morning=prompt("You agreed to take care of Sparky! Please answer if he should eat or get a shot first.");
-    
-    //Need to find out how to make the answer count after they answer it once they left it blank
+
 //If the user chooses shot let them know that it is wrong    
 }else if (morning==="shot"){
     alert("NO! Do you want Sparky to go into a coma?! He needs to eat and then he gets his shot.");
@@ -50,6 +50,22 @@ if(morning===""){
 }else{
  alert ("You had one job. That is to take care of Sparky! You are failing!"); 
 }
-
+//Now that the user fed and gave Sparky insulin they need to make sure he exercises
 alert("Now that you finally fed poor Sparky and gave him insulin, it is now time to take him for a walk.");
 
+//Ask the user how many miles they walked Sparky if it is more than 2 he will need a nap otherwise he needs more exercise
+var walking = prompt("How many miles do you walk with Sparky?");
+
+if(walking===""){
+//dont let the user leave the prompt blank
+    console.log("Left it blank");
+    walking =prompt("I would like to know how many miles please!");
+}
+//make sure the user only uses numbers with isNaN
+if(isNaN(walking)){
+    walking=prompt("I would only like to see numbers please!");
+}
+
+miles = (walking<=2) ? "Sparky needs more of a workout!" : "Sparky needs a nap!";
+
+alert(miles);
