@@ -80,7 +80,7 @@ if (goodBoy==="") {
 }
 
 //Make sure the user can only put "Loves" or "Treats"
-if(goodBoy != "Loves" && goodBoy != "Treats"){
+if(goodBoy != "loves" && goodBoy != "treats"){
     goodBoy= prompt("Only 'Loves' or 'Treats' please.");
 }
 
@@ -96,15 +96,22 @@ if(goodBoy==="Loves"){
 
 //Ask user how old they are
 var age=prompt(name+", How old are you?");
-//Make sure they are using numbers
+//Make sure it isnt blank
 if (age===""){
     age= prompt("Please put some type of numbers.");
 }
+//Make sure they are only using numbers
 if(isNaN(age)){
     age=prompt("Only numbers please...");
 }
+//Take users age and times it by 7 to give them their age in sparky years
 var sparkysAge= age * 7;
 
 alert(name+ ", Did you know that you are "+ sparkysAge+ " in 'Sparky' Years?");
+
+alert("Well " +name+ ", you have come a long way. First you got to "+ "'"+morning+"'"+ " with Sparky, then you walked " +walking+ " miles with him. After all of that you decided to give Sparky " +goodBoy+". In the end you got to find out that you are " +sparkysAge+ " in Sparky years! " +name+ ", I hope you are understanding how to take care of him because this is just 'Part 2' of his journey!");
+
+
+
 
 
