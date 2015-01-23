@@ -35,7 +35,7 @@ alert('By pressing "OK", you are agreeing that you will help Sparky with his ins
 
 var morning = prompt("It is morning and that means it is time to feed Sparky and give him his insulin.\nWhich should Sparky do first? Eat or get a shot?");
     morning=morning.toLowerCase();
-//Make sure the user doesnt leave prompt blank
+//Make sure the user doesn't leave prompt blank
 if(morning===""){
     console.log("Left it blank.");
     morning=prompt("You agreed to take care of Sparky! Please answer if he should eat or get a shot first.");
@@ -57,7 +57,7 @@ alert("Now that you finally fed poor Sparky and gave him insulin, it is now time
 var walking = prompt("How many miles do you walk with Sparky?");
 
 if(walking===""){
-//dont let the user leave the prompt blank
+//don't let the user leave the prompt blank
     console.log("Left it blank");
     walking =prompt("I would like to know how many miles please!");
 }
@@ -67,32 +67,31 @@ if(isNaN(walking)){
 }
 
 miles = (walking<=2) ? "Sparky needs more of a workout!" : "Sparky needs a nap!";
-
 alert(miles);
+
 //Have the user decide how they want spoil Sparky with loves or hugs
 var goodBoy= prompt("Sparky has been such a good boy today! How do you treat him? Loves or Treats?");
+
 //Make it all lowercase
     goodBoy=goodBoy.toLowerCase();
 
-//Make sure it isnt blank
+//Make sure it isn't blank
 if (goodBoy==="") {
     goodBoy = prompt("Are you not going to give him anything?\nLoves or Treats?");
 }
 
 //Make sure the user can only put "Loves" or "Treats"
 if(goodBoy != "loves" && goodBoy != "treats"){
-    goodBoy= prompt("Only 'Loves' or 'Treats' please.");
+    goodBoy= prompt("Only 'loves' or 'treats' please.");
 }
 
 
 //Let the user know how good they did with sparky today if they put loves and how bad they are if they put treats.
-if(goodBoy==="Loves"){
+if(goodBoy==="loves"){
     alert("Great job being responsible with Sparky today!");
-}else if (goodBoy==="Treats"){
+}else if (goodBoy==="treats"){
     alert ("He is diabetic! No BAD Human!BAD! Give Sparky LOVES!");
 }
-
-
 
 //Ask user how old they are
 var age=prompt(name+", How old are you?");
