@@ -71,24 +71,38 @@ miles = (walking<=2) ? "Sparky needs more of a workout!" : "Sparky needs a nap!"
 alert(miles);
 //Have the user decide how they want spoil Sparky with loves or hugs
 var goodBoy= prompt("Sparky has been such a good boy today! How do you treat him? Loves or Treats?");
-goodBoy=goodBoy.toLowerCase();
+//Make it all lowercase
+    goodBoy=goodBoy.toLowerCase();
+
+//Make sure it isnt blank
+if (goodBoy==="") {
+    goodBoy = prompt("Are you not going to give him anything?\nLoves or Treats?");
+}
 
 //Make sure the user can only put "Loves" or "Treats"
 if(goodBoy != "Loves" && goodBoy != "Treats"){
-    goodBoy= prompt("Only 'Loves' or 'Treats' please.")
+    goodBoy= prompt("Only 'Loves' or 'Treats' please.");
 }
-if (goodBoy===""){
-    goodBoy = prompt("Are you not going to give him anything?\nLoves or Treats?")
-}
+
+
 //Let the user know how good they did with sparky today if they put loves and how bad they are if they put treats.
 if(goodBoy==="Loves"){
     alert("Great job being responsible with Sparky today!");
 }else if (goodBoy==="Treats"){
-    alert ("He is diabetic! No BAD Human!BAD! Give Sparky LOVES!")
+    alert ("He is diabetic! No BAD Human!BAD! Give Sparky LOVES!");
 }
 
-var age=prompt(name+", How old are you?");
 
+
+//Ask user how old they are
+var age=prompt(name+", How old are you?");
+//Make sure they are using numbers
+if (age===""){
+    age= prompt("Please put some type of numbers.");
+}
+if(isNaN(age)){
+    age=prompt("Only numbers please...");
+}
 var sparkysAge= age * 7;
 
 alert(name+ ", Did you know that you are "+ sparkysAge+ " in 'Sparky' Years?");
