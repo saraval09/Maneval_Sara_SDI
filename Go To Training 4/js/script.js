@@ -31,3 +31,20 @@ while(min===""|| isNaN(min)){
     //re-prompt the user
     min = prompt("Please do not leave blank and only use numbers!\nPlease type in min value:");
 }
+
+//Prompt the user for a max number
+//do while loop
+
+/*
+do{
+code to run
+}while(condition to test);
+*/
+
+do {
+    //runs at least once
+    //prompt the user
+    var max = prompt("Please enter a max value");
+}while(max==="" || isNaN(max));
+
+//Create a function that will give us a random number
