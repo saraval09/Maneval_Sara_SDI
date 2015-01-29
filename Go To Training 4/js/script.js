@@ -11,7 +11,7 @@ Go To Training 4
 
 //Ask the user for a min number
 
-var min = prompt("Let's find a random number between two numbers.\nPlease enter a minimum number:");
+/*var min = prompt("Let's find a random number between two numbers.\nPlease enter a minimum number:");
 
 //Validate that user prompt
 /*
@@ -27,7 +27,7 @@ if (min===""|| isNaN(min)){
 
 //New way of validating is with while loops
 
-while(min===""|| isNaN(min)){
+/*while(min===""|| isNaN(min)){
     //re-prompt the user
     min = prompt("Please do not leave blank and only use numbers!\nPlease type in min value:");
 }
@@ -41,7 +41,7 @@ code to run
 }while(condition to test);
 */
 
-do {
+/*do {
     //runs at least once
     //prompt the user
     var max = prompt("Please enter a max value");
@@ -53,7 +53,7 @@ function functionName (Parameters){
     code goes in here
 }
  */
-function randomizer(minNum, maxNum){
+/*function randomizer(minNum, maxNum){
 
     //math.random()*(max number - min number) + min number
     var randomNumber = Math.round(Math.random()*(maxNum - minNum) + Number(minNum));
@@ -73,4 +73,15 @@ console.log(results);
 
 for (var 1 =0; 1<15; 1++){
     console.log(randomizer(min,max));
+}
+*/
+
+//validate specific words
+//ask a user a yes or no question
+var happy = prompt("Are you happy today? Please answer yes or no:");
+//Uppercase matters
+happy=happy.toLowerCase();
+while(happy!="yes" && happy !="no" && happy !="maybe"){
+    //re-prompt
+    happy=prompt("Only type in yes or no. Are you happy?");
 }
