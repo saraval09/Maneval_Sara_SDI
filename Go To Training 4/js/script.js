@@ -48,3 +48,17 @@ do {
 }while(max==="" || isNaN(max));
 
 //Create a function that will give us a random number
+/*
+function functionName (Parameters){
+    code goes in here
+}
+ */
+function randomizer(minNum, maxNum){
+
+    //math.random()*(max number - min number) + min number
+    var randomNumber = Math.round(Math.random()*(maxNum - minNum) + Number(minNum));
+    console.log(randomNumber);
+}
+//Function call starts the function running
+//Pit in arguments to send into the function
+randomizer(min,max);
