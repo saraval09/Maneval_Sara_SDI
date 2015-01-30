@@ -70,3 +70,29 @@ while(kid!="yes" && kid !="no"){
 
 console.log(name+ " said " +kid+ " to getting Sparky as a puppy.");
 
+var cat= prompt =("Does Sparky have any cat friends?");
+
+cat=cat.toLowerCase();
+while(cat!="yes" && cat !="no"){
+   
+    cat=prompt("Just a simple answer 'Yes' or 'No'.");
+}
+console.log(name+" said"+cat+" to having cat friends");
+
+var dog= prompt =("Does Sparky have any dog friends?");
+
+dog=dog.toLowerCase();
+while(dog!="yes" && dog !="no"){
+   
+    dog=prompt("Just a simple answer 'Yes' or 'No'.");
+}
+console.log(name+" said"+dog+" to having dog friends");
+
+var animals= prompt =("Does Sparky have any other animal friends?");
+
+animals=animals.toLowerCase();
+while(animals!="yes" && animals !="no"){
+   
+    animals=prompt("Just a simple answer 'Yes' or 'No'.");
+}
+console.log(name+" said"+animals+" to having other animal friends");
