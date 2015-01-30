@@ -1,12 +1,17 @@
 /*
 Sara Maneval
 SDI Section #3
-Sparky's Origin
+Sparky's Legacy
 1/29/2015
 */
 
 //alert("This is connected");
 //Prompt user for their name
+function title (){
+        alert("Sparky's Legacy Continues");
+}
+title();
+
 var name = prompt ("Hello! What is your name?");
 //re-prompt the user if they leave it blank or put in a number
 while(name===""|| !isNaN(name)){
@@ -46,3 +51,22 @@ var a = milesAWeek (miles,times);
 console.log(name+" walks Sparky "+a+" miles a week.");
 
 var sparky= alert("Wow "+name+ "! You walk Sparky "+a+ " miles a week!");
+
+alert("Ok "+name+ ", now that the small talk is out of the way, I want to learn more about Sparky and his background.");
+
+var sparkyAge = prompt("How old is Sparky?");
+while (sparkyAge==="" || !isNaN(sparkyAge)){
+    sparkyAge=prompt("Please give me Sparky's AGE.");
+}
+console.log ("Sparky is "+sparkyAge+" years old.");
+
+var kid = prompt("Did you get him as a puppy?");
+
+kid=kid.toLowerCase();
+while(kid!="yes" && kid !="no" && kid !=""){
+   
+    kid=prompt("");
+}
+
+
+
