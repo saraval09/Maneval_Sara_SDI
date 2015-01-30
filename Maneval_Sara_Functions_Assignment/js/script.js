@@ -42,8 +42,8 @@ console.log(name+ " walks Sparky " +times+ " times a week.");
 
 var milesAWeek= function (day, week){ 
 
-    var area = day * week;
-    return area;
+    var i = day * week;
+    return i;
 
 }
 var a = milesAWeek (miles,times);
@@ -55,7 +55,7 @@ var sparky= alert("Wow "+name+ "! You walk Sparky "+a+ " miles a week!");
 alert("Ok "+name+ ", now that the small talk is out of the way, I want to learn more about Sparky and his background.");
 
 var sparkyAge = prompt("How old is Sparky?");
-while (sparkyAge==="" || !isNaN(sparkyAge)){
+while (sparkyAge==="" || isNaN(sparkyAge)){
     sparkyAge=prompt("Please give me Sparky's AGE.");
 }
 console.log ("Sparky is "+sparkyAge+" years old.");
@@ -63,10 +63,10 @@ console.log ("Sparky is "+sparkyAge+" years old.");
 var kid = prompt("Did you get him as a puppy?");
 
 kid=kid.toLowerCase();
-while(kid!="yes" && kid !="no" && kid !=""){
+while(kid!="yes" && kid !="no"){
    
-    kid=prompt("");
+    kid=prompt("Just a simple answer 'Yes' or 'No'.");
 }
 
-
+console.log(name+ " said " +kid+ " to getting Sparky as a puppy.");
 
