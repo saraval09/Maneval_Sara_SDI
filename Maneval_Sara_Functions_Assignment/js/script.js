@@ -70,29 +70,53 @@ while(kid!="yes" && kid !="no"){
 
 console.log(name+ " said " +kid+ " to getting Sparky as a puppy.");
 
-var cat= prompt =("Does Sparky have any cat friends?");
+var cat= prompt ("Does Sparky have any cat friends?");
 
 cat=cat.toLowerCase();
 while(cat!="yes" && cat !="no"){
    
     cat=prompt("Just a simple answer 'Yes' or 'No'.");
 }
-console.log(name+" said"+cat+" to having cat friends");
+console.log(name+" said "+cat+" to having cat friends");
 
-var dog= prompt =("Does Sparky have any dog friends?");
+var dog= prompt ("Does Sparky have any dog friends?");
 
 dog=dog.toLowerCase();
 while(dog!="yes" && dog !="no"){
    
     dog=prompt("Just a simple answer 'Yes' or 'No'.");
 }
-console.log(name+" said"+dog+" to having dog friends");
+console.log(name+" said "+dog+" to having dog friends");
 
-var animals= prompt =("Does Sparky have any other animal friends?");
+var animals= prompt ("Does Sparky have any other animal friends?");
 
 animals=animals.toLowerCase();
 while(animals!="yes" && animals !="no"){
    
     animals=prompt("Just a simple answer 'Yes' or 'No'.");
 }
-console.log(name+" said"+animals+" to having other animal friends");
+console.log(name+" said "+animals+" to having other animal friends");
+
+
+var allFriends= function (animal1, animal2, animal3){ 
+
+    var everyone = "You said "+animal1+" to Sparky having cat friends, "+animal2+" to having dog friends, and " +animal3+ " to having any other animal friends. Hopefully Sparky is never bored!"
+    return everyone;
+    
+
+}
+var alltogether = allFriends (cat,dog,animals);
+console.log(alltogether);
+
+alert(alltogether);
+
+alert("Wow! I learned a lot about Sparky today! Thank you for ALL of your answers! I can't believe that Sparky is " +sparkyAge+" years old! And you said " +kid+" to getting him as a puppy. Cant forget that you walk him "+a+" times a week!");
+      
+alert("Until next time!");
+
+function title (){
+        alert("Sparky's Legacy Continues");
+}
+title();
+      
+      
