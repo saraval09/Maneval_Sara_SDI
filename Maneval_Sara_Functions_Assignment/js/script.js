@@ -110,12 +110,12 @@ console.log(alltogether);
 
 alert(alltogether);
 
-alert("Wow! I learned a lot about Sparky today! Thank you for ALL of your answers! I can't believe that Sparky is " +sparkyAge+" years old! And you said " +kid+" to getting him as a puppy. Cant forget that you walk him "+a+" times a week!");
+alert("Wow! I learned a lot about Sparky today!\nThank you for ALL of your answers!\nI can't believe that Sparky is " +sparkyAge+" years old!\nAnd you said " +kid+" to getting him as a puppy!\nCant forget that you walk him "+a+" times a week!");
       
 alert("Until next time!");
 
 function title (){
-        alert("Sparky's Legacy Continues");
+        alert("Sparky's Legacy Will Continue");
 }
 title();
       
